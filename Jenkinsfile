@@ -18,7 +18,7 @@ pipeline {
          
 	stage('Scan') {
         steps{
-            aquaMicroscanner imageName: 'aboullaite/sb-app', notCompliesCmd: 'exit 4', onDisallowed: 'fail', outputFormat: 'html'
+            aquaMicroscanner imageName: 'aboullaite/sb-app', notCompliesCmd: 'exit 4', onDisallowed: 'fail'
         	} 
 	}
 	     
