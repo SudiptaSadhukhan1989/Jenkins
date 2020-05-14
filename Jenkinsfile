@@ -18,7 +18,7 @@ pipeline {
          
 	stage('Scan') {
         steps{
-            aquaMicroscanner imageName: '', notCompliesCmd: 'exit 4', onDisallowed: 'fail', outputFormat:'html'
+            aquaMicroscanner imageName: 'alpine:latest', notCompliesCmd: 'exit 4', onDisallowed: 'fail', outputFormat:'html'
         	} 
 	}
 	     
